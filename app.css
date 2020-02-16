@@ -1,0 +1,24 @@
+@font-face { font-family: 'Nanum Square'; font-style: normal; font-weight: 400; src: url(./fonts/NanumSquareL.ttf); src: local('Nanum Square'),
+local('NanumSquare'),
+url(./fonts/NanumSquareL.ttf) format('truetype'),
+url(./fonts/NanumSquareL.woff) format('woff'),
+url(./fonts/NanumSquareL.otf) format('opentype'); }
+
+body {-webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale; text-rendering: optimizeLegibility;}
+ul {list-style: none; margin:0; padding:0;}
+li {margin-bottom:1rem}
+#root {width:100%; min-height:100vh; padding:4rem; display:flex; box-sizing: border-box; justify-content: center;  background-image:url("./images/bg_plant.jpg"); background-size: cover; background-repeat: no-repeat}
+.resume {background-color: white; max-width: 1600px; width: 1200px; display:flex  }
+
+h1, h2, h3, h4, h5 {margin:0; line-height: 1.5}
+h3 {font-family: 'Lobster', cursive; font-size:2rem; font-weight: normal; text-transform: capitalize; margin-bottom:1rem; }
+.kr {font-family: 'Nanum Square'}
+section {width:100%; margin-bottom:5rem}
+aside {flex:0 0 20%; padding:3rem; border-right: 1px solid #DDD }
+.title {text-align: center}
+.title .picture {width:70%; height:0; padding-top:70%; background:url("./images/coralcat.jpg") no-repeat center; background-size: cover; border-radius: 50%; margin:0 auto 2rem }
+
+
+.main {flex:1 1 auto; padding:3rem }
+.skills div {display:flex}
+.skills ul {flex:1 1 auto}
