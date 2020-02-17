@@ -135,10 +135,22 @@ const Work = (props) => (
             <li className="content">{props.content}</li>
         </ul>
         <ul className="links">
-            <li className="behance"><a href="https://www.behance.net/gallery/92129937/SAMSUNG-Welstory" target="_blank"><i
-                className="fab fa-behance"></i></a></li>
-            <li className="link"><a href="https://coralcat.github.io/welstory/" target="_blank"><i
-                className="fas fa-external-link-alt"></i></a></li>
+            <li className="behance">
+                <a href="https://www.behance.net/gallery/92129937/SAMSUNG-Welstory" target="_blank">
+                    <span className="fa-stack fa-2x">
+                      <i className="fas fa-square fa-stack-2x"></i>
+                      <i className="fab fa-behance fa-stack-1x fa-inverse"></i>
+                    </span>
+                </a>
+            </li>
+            <li className="link">
+                <a href="https://coralcat.github.io/welstory/" target="_blank">
+                    <span className="fa-stack fa-2x">
+                      <i className="fas fa-square fa-stack-2x"></i>
+                      <i className="fas fa-external-link-alt fa-stack-1x fa-inverse"></i>
+                    </span>
+                </a>
+            </li>
         </ul>
     </div>
 );

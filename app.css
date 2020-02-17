@@ -36,9 +36,14 @@ aside {flex:0 0 20%; padding:3rem; border-right: 1px solid #DDD }
 
 
 .main {flex:1 1 auto; padding:3rem }
-.work div {display:flex; justify-content: space-between}
-.work .links {flex:0 0 20%; display:flex; align-content: center; flex-wrap:wrap}
-.work .links a {color:black; margin-left: 1rem}
+.work div {display:flex; justify-content: space-between; margin-bottom: 2rem;}
+.work .links {flex:0 0 20%; display:flex; align-content: center; justify-content: flex-end; flex-wrap:wrap}
+.work .links a {color:black;}
+.work .links i {}
+.work .links .fa-stack {font-size:.7rem}
+.work .links .behance .fa-square {color: cornflowerblue}
+.work .links .link .fa-square {color: royalblue}
+
 .skills div {display:flex}
 .skills ul {flex:1 1 auto}
 
@@ -47,8 +52,8 @@ aside {flex:0 0 20%; padding:3rem; border-right: 1px solid #DDD }
     .resume {flex-direction: column;}
     aside {padding:1.5rem}
     .main {padding:1.5rem}
-    .work div {flex-direction: column; justify-content: left; margin-bottom: 2rem; border-bottom:1px solid #eee}
+    .work div {flex-direction: column; justify-content: left; border-bottom:1px solid #eee}
     .work div ul:first-child {margin-bottom: .5rem}
     .work .links {margin-bottom:1rem}
-    .work .links a {margin-left: 0; margin-right:1rem}
+    .work .links a { margin-right:1rem}
 }
