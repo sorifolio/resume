@@ -5,6 +5,11 @@ url(./fonts/NanumSquareR.woff) format('woff'),
 url(./fonts/NanumSquareR.eot) format('embedded-opentype'),
 url(./fonts/NanumSquareR.otf) format('opentype'); }
 
+@font-face { font-family: 'cfnmkB'; font-style: normal; font-weight: 400; src: url(./fonts/cfnmkB.ttf); src: local('cfnmkB'),
+local('cfnmkB'),
+url(./fonts/cfnmkB.ttf) format('truetype'),
+url(./fonts/cfnmkB.otf) format('opentype'); }
+
 body {-webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale; text-rendering: optimizeLegibility; }
 ul {list-style: none; margin:0 0 2rem; padding:0;}
 li {margin-bottom:.5rem}
@@ -15,10 +20,13 @@ h1, h2, h3, h4, h5 {margin:0; line-height: 1.5}
 h3 {font-family: 'Lobster', cursive; font-size:2rem; font-weight: normal; text-transform: capitalize; margin-bottom:1rem; }
 h5 {font-size:1rem}
 .kr {font-family: 'Nanum Square'}
+.date {font-family: 'Open Sans', sans-serif; font-size:14px}
+
 section {width:100%; margin-bottom:3rem ;line-height: 1.2}
 aside {flex:0 0 20%; padding:3rem; border-right: 1px solid #DDD }
 .title {font-family: 'Open Sans', sans-serif; text-align: center; text-transform: uppercase; font-weight: bold}
 .title .picture {width:70%; height:0; padding-top:70%; background:url("./images/coralcat.jpg") no-repeat center; background-size: cover; border-radius: 50%; margin:0 auto 2rem }
+.title .name {font-family: "cfnmkB"; font-weight: normal}
 .title .role {font-weight: normal}
 
 .profile {border-top:3px solid #F6F6F6; border-bottom: 3px solid #F6F6F6; padding:2rem 0}
@@ -28,6 +36,8 @@ aside {flex:0 0 20%; padding:3rem; border-right: 1px solid #DDD }
 
 
 .main {flex:1 1 auto; padding:3rem }
-
+.work div {display:flex; justify-content: space-between}
+.work .links {flex:0 0 20%; display:flex; align-content: center; flex-wrap:wrap}
+.work .links a {color:black; margin-left: 1rem}
 .skills div {display:flex}
 .skills ul {flex:1 1 auto}
