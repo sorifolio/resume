@@ -184,7 +184,7 @@ const Main = (props) => {
 const Title = () => (
     <section className="title">
         <div className="picture"></div>
-        <h1 className="name kr">김소리</h1>
+        <h1 className="name">김소리</h1>
         <h4 className="role">web developer</h4>
     </section>
 );
@@ -195,7 +195,7 @@ const Information = () => {
             <ul>
                 <li>
                     <i className="fas fa-envelope-open-text fa-sm"></i>
-                    <span>sori.developer@gmail.com</span>
+                    <a href="mailto:sori.developer@gmail.com"><span>sori.developer@gmail.com</span></a>
                 </li>
                 <li>
                     <i className="fas fa-phone-alt fa-sm"></i>
