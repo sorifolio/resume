@@ -69,23 +69,23 @@ const works = [
         title: "르노삼성 자동차",
         date: "2019.02 ~ 2019.07",
         content: "고객센터 챗봇 UI 디자인 및 퍼블리싱",
-        behance: "",
-        link: ""
+        behance: "https://www.behance.net/gallery/92085323/Renault-Samsung",
+        link: "https://coralcat.github.io/rsm_chatbot/"
     },
     {
         id: "skhynix",
         title: "SK 하이닉스",
         date: "2018.12 ~ 2019.01",
         content: "사내 시스템 GDPR UI 디자인 및 퍼블리싱",
-        behance: "",
-        link: ""
+        behance: "https://www.behance.net/gallery/92070663/SK-Hynix",
+        link: "https://coralcat.github.io/sk_gdpr/"
     },
     {
         id: "skcnc",
         title: "SK C&C",
         date: "2018.08 ~ 2018.12",
         content: "사내 시스템 TAMS UI 디자인",
-        behance: "",
+        behance: "https://www.behance.net/gallery/91699661/SK-C-C",
         link: ""
     },
     {
@@ -93,7 +93,7 @@ const works = [
         title: "삼성 SDS",
         date: "2018.05 ~ 2018.07",
         content: "소프트웨어 라이센스 B2B 사이트 UI 디자인",
-        behance: "",
+        behance: "https://www.behance.net/gallery/91699461/Samsung-License-Management",
         link: ""
     },
     {
@@ -101,8 +101,8 @@ const works = [
         title: "GHSoft",
         date: "2017.12 ~ 2018.03",
         content: "사내 개발중인 프로그램 퍼블리싱, 프로모션 사이트 제작",
-        behance: "",
-        link: ""
+        behance: "https://www.behance.net/gallery/91578205/GHSoft",
+        link: "https://coralcat.github.io/imez/"
     },
     {
         id: "tovsoft",
@@ -118,7 +118,7 @@ const works = [
         date: "2016.01 ~ 2017.01",
         content: "- 정부청사관리소 공식사이트 관리, 메인페이지 디자인 및 퍼블리싱\n" +
             "- 사내 업무 시스템 메인페이지 디자인 및 퍼블리싱",
-        behance: "",
+        behance: "https://www.behance.net/gallery/91577293/TNP-Mall",
         link: ""
     },
     {
@@ -127,15 +127,15 @@ const works = [
         date: "2015.01 ~ 2015.12",
         content: "- 정부청사관리소 공식사이트 관리, 메인페이지 디자인 및 퍼블리싱\n" +
             "- 사내 업무 시스템 메인페이지 디자인 및 퍼블리싱",
-        behance: "",
-        link: ""
+        behance: "https://www.behance.net/gallery/91576791/_",
+        link: "http://chungsa.go.kr"
     },
     {
         id: "onestop",
         title: "원스톱웨딩 웹디자인업무 총괄",
         date: "2014.08 ~ 2014.12",
         content: "웨딩&여행사 관련 배너/상세 이미지 제작, 사이트 부분 리뉴얼",
-        behance: "",
+        behance: "https://www.behance.net/gallery/91576525/Onestop-Wedding   ",
         link: ""
     },
     {
@@ -143,7 +143,7 @@ const works = [
         title: "AKMALL 백화점몰 파트",
         date: "2013.07 ~ 2014.07",
         content: "백화점몰 기획전/이벤트/메일링 이미지 제작",
-        behance: "",
+        behance: "https://www.behance.net/gallery/91575811/AK-Mall",
         link: ""
     },
     {
@@ -151,8 +151,8 @@ const works = [
         title: "제너럴아이디어 웹디자인업무 총괄",
         date: "2012.07 ~ 2013.06",
         content: "상품상세/이벤트/메일링 이미지 제작, 사이트 리뉴얼",
-        behance: "",
-        link: ""
+        behance: "https://www.behance.net/gallery/91575263/general-idea",
+        link: "http://generalidea.co.kr/index.html"
     },
     {
         id: "sbr",
@@ -193,7 +193,7 @@ const Work = (props) => (
         </ul>
         <ul className="links">
             <li className="behance">
-                <a href="https://www.behance.net/gallery/92129937/SAMSUNG-Welstory" target="_blank">
+                <a href={props.behance} target="_blank">
                     <span className="fa-stack fa-2x">
                       <i className="fas fa-square fa-stack-2x"></i>
                       <i className="fab fa-behance fa-stack-1x fa-inverse"></i>
@@ -201,7 +201,7 @@ const Work = (props) => (
                 </a>
             </li>
             <li className="link">
-                <a href="https://coralcat.github.io/welstory/" target="_blank">
+                <a href={props.link} target="_blank">
                     <span className="fa-stack fa-2x">
                       <i className="fas fa-square fa-stack-2x"></i>
                       <i className="fas fa-external-link-alt fa-stack-1x fa-inverse"></i>
@@ -245,7 +245,7 @@ const Main = (props) => {
         <div className="main">
             <section className="work">
                 <h3>work experience</h3>
-                {props.initialWorks.map(item => <Work title={item.title} date={item.date} content={item.content}
+                {props.initialWorks.map(item => <Work title={item.title} date={item.date} content={item.content} behance={item.behance} link={item.link}
                                                       key={item.id}/>)}
             </section>
             <Skills/>
@@ -296,7 +296,7 @@ const Education = () => (
             <li className="date">2005 - 2010</li>
         </ul>
         <ul>
-            <li><h4 className="kr">CESL in University of Arizona</h4></li>
+            <li><h4 className="kr">애리조나주립대학교 CESL</h4></li>
             <li className="date">2007</li>
         </ul>
     </section>
