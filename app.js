@@ -1,3 +1,60 @@
+const academies = [
+    {
+        id: "Reactjs",
+        title: "ReactJS Programming",
+        date: "2020.02 ~ 2020.03",
+        hours:"32시간"
+    },
+    {
+        id: "Illustrator",
+        title: "Adobe Illustrator",
+        date: "2019.10 ~ 2019.12",
+        hours:"30시간"
+    },
+    {
+        id: "Nodejs",
+        title: "NodeJS Programming",
+        date: "2019.06 ~ 2019.07",
+        hours:"32시간"
+    },
+    {
+        id: "HTML",
+        title: "HTML5 & CSS3",
+        date: "2019.03 ~ 2019.04",
+        hours:"30시간"
+    },
+    {
+        id: "JAVA",
+        title: "JAVA Software Engineering",
+        date: "2017.03 ~ 2017.10",
+        hours:"1016시간"
+    },
+    {
+        id: "javascript",
+        title: "Javascript & jQuery",
+        date: "2016.03 ~ 2016.04",
+        hours:"30시간"
+    },
+    {
+        id: "actionscript",
+        title: "Adobe Flash Actionscript",
+        date: "2010.12 ~ 2011.01",
+        hours:"60시간"
+    },
+    {
+        id: "flash",
+        title: "Adobe Flash",
+        date: "2010.04 ~ 2010.05",
+        hours:"30시간"
+    },
+    {
+        id: "dreamweaver",
+        title: "Adobe Dreamweaver",
+        date: "2010.12 ~ 2011.01",
+        hours:"30시간"
+    }
+];
+
 const works = [
     {
         id: "welstory",
@@ -132,7 +189,7 @@ const Work = (props) => (
         <ul>
             <li><h4 className="kr">{props.title}</h4></li>
             <li className="date">{props.date}</li>
-            <li className="content">{props.content}</li>
+            <li className="content kr">{props.content}</li>
         </ul>
         <ul className="links">
             <li className="behance">
@@ -163,6 +220,8 @@ const Skills = () => (
                 <li>html5</li>
                 <li>css3</li>
                 <li>javascript</li>
+            </ul>
+            <ul className="professional">
                 <li>jquery</li>
                 <li>react.js</li>
                 <li>node.js</li>
@@ -171,6 +230,8 @@ const Skills = () => (
                 <li>vscode</li>
                 <li>webstorm</li>
                 <li>eclipse</li>
+            </ul>
+            <ul className="technical">
                 <li>sublime</li>
                 <li>photoshop</li>
                 <li>illustrator</li>
@@ -197,7 +258,7 @@ const Title = () => (
     <section className="title">
         <div className="picture"></div>
         <h1 className="name">김소리</h1>
-        <h4 className="role">web developer</h4>
+        <h4 className="role">full-stack designer</h4>
     </section>
 );
 
@@ -219,8 +280,7 @@ const Information = () => {
 };
 const Profile = () => (
     <section className="profile kr">
-        손이 빠른 편이며, 정보검색을 통하여 문제 해결이나 오픈소스를 유용하게 활용하는 편입니다.
-        배움에 대한 열망이 강하여 여가시간을 허투루 보내지 않고, 끊임없이 공부하여 새로 나오는 기술들에 뒤쳐지지 않도록 노력하는 편입니다.
+        브라우저 안의 불필요한 시각공해를 줄이고, 코드 구조를 아름답게 짜는것에 흥미를 느끼며, 최종적으로 UI 개발자가 되는 것이 목표입니다.
     </section>
 );
 
@@ -231,16 +291,37 @@ const Education = () => (
             <li><h4 className="kr">창덕여자고등학교</h4></li>
             <li className="date">2002 - 2005</li>
         </ul>
+        <ul>
+            <li><h4 className="kr">남서울대학교</h4></li>
+            <li className="date">2005 - 2010</li>
+        </ul>
+        <ul>
+            <li><h4 className="kr">CESL in University of Arizona</h4></li>
+            <li className="date">2007</li>
+        </ul>
     </section>
 );
 
-const Aside = () => {
+const Academy = (props) => (
+    <ul>
+        <li><h4>{props.title}</h4></li>
+        <li className="date">
+            <span className="hours"><i className="far fa-clock fa-sm"></i>{props.hours}</span>
+            <span>{props.date}</span>
+        </li>
+    </ul>
+);
+
+const Aside = (props) => {
     return (
         <aside>
             <Title/>
             <Information/>
             <Profile/>
             <Education/>
+            <section className="academy">
+                {props.initialAcademies.map(item => <Academy title={item.title} date={item.date} hours={item.hours} key={item.id}/>)}
+            </section>
         </aside>
     )
 };
@@ -249,7 +330,7 @@ const Aside = () => {
 const App = () => {
     return (
         <div className="resume">
-            <Aside/>
+            <Aside initialAcademies={academies}/>
             <Main initialWorks={works}/>
         </div>
     );
