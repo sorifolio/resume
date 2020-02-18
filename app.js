@@ -270,7 +270,9 @@ const Main = (props) => {
 
 const Title = () => (
     <section className="title">
-        <div className="picture"></div>
+        <div className="picture">
+            <img src="./images/sori.jpg" alt="" />
+        </div>
         <h1 className="name">김소리</h1>
         <h4 className="role">full-stack designer</h4>
     </section>

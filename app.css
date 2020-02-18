@@ -38,7 +38,8 @@ h5 {font-size:1rem}
 section {width:100%; margin-bottom:3rem ;line-height: 1.2}
 aside {flex:0 0 20%; padding:3rem; border-right: 1px solid #DDD }
 .title {font-family: 'Open Sans', sans-serif; text-align: center; text-transform: uppercase; font-weight: bold}
-.title .picture {width:70%; height:0; padding-top:70%; background:url("./images/coralcat.jpg") no-repeat center; background-size: cover; border-radius: 50%; margin:0 auto 2rem }
+.title .picture {position:relative; overflow: hidden; width:70%; height:0; padding-top:70%; background:url("./images/coralcat.jpg") no-repeat center; background-size: cover; border-radius: 50%; margin:0 auto 2rem }
+.title .picture img {visibility:hidden; width:100%; position: absolute; top:0; left: 0}
 .title .name {font-family: "cfnmkB"; font-weight: normal}
 
 .profile {border-top:3px solid #F6F6F6; border-bottom: 3px solid #F6F6F6; padding:2rem 0}
@@ -78,4 +79,17 @@ aside {flex:0 0 20%; padding:3rem; border-right: 1px solid #DDD }
     .work div ul:first-child {margin-bottom: .5rem}
     .work .links {margin-bottom:1rem}
     .work .links a { margin-right:1rem}
+}
+
+@media print {
+    body {font-size: 14px}
+    #root {min-width:1400px; padding:0}
+    .resume {width:auto; max-width: none;}
+    .title .picture img {visibility: visible}
+    .sns, .work .links {display:none}
+}
+
+@page {
+    size: auto;   /* auto is the initial value */
+    margin: 2rem;
 }
