@@ -18,7 +18,7 @@ a {color:black; text-decoration: none;}
 
 @keyframes appear {
     0% {opacity:0; visibility: hidden}
-    100% {opacity: 100%; visibility: visible}
+    100% {opacity: 1; visibility: visible}
 }
 .resume {opacity:0; animation:1s appear forwards .2s; background-color: white; max-width: 1600px; width: 1200px; display:flex  }
 
