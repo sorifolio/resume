@@ -5,12 +5,19 @@ url(./fonts/NanumSquareL.woff) format('woff'),
 url(./fonts/NanumSquareL.eot) format('embedded-opentype')
 }
 
+@font-face { font-family: 'Nanum Square B'; font-style: normal; font-weight: 600; src: url(./fonts/NanumSquareB.ttf); src: local('Nanum Square B'),
+local('NanumSquareB'),
+url(./fonts/NanumSquareB.ttf) format('truetype'),
+url(./fonts/NanumSquareB.woff) format('woff'),
+url(./fonts/NanumSquareB.eot) format('embedded-opentype')
+}
+
 @font-face { font-family: 'cfnmkB'; font-style: normal; font-weight: 400; src: url(./fonts/cfnmkB.ttf); src: local('cfnmkB'),
 local('cfnmkB'),
 url(./fonts/cfnmkB.ttf) format('truetype'),
 url(./fonts/cfnmkB.otf) format('opentype'); }
 
-body {-webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale; text-rendering: optimizeLegibility; }
+body {font:15px/1.5 "Nanum Square"; -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale; text-rendering: optimizeLegibility; }
 ul {list-style: none; margin:0; padding:0;}
 li {margin-bottom:.5rem}
 a {color:black; text-decoration: none;}
@@ -22,7 +29,7 @@ a {color:black; text-decoration: none;}
 }
 .resume {opacity:0; animation:1s appear forwards .2s; background-color: white; max-width: 1600px; width: 1200px; display:flex  }
 
-h1, h2, h3, h4, h5 {margin:0; line-height: 1.5}
+h1, h2, h3, h4, h5 {margin:0; font-family: "Open Sans", sans-serif, 'Nanum Square B' }
 h3 {font-family: 'Lobster', cursive; font-size:2rem; font-weight: normal; text-transform: capitalize; margin-bottom:1rem; }
 h5 {font-size:1rem}
 .kr {font-family: 'Nanum Square'; font-weight: bold; }
@@ -35,14 +42,20 @@ aside {flex:0 0 20%; padding:3rem; border-right: 1px solid #DDD }
 .title .name {font-family: "cfnmkB"; font-weight: normal}
 
 .profile {border-top:3px solid #F6F6F6; border-bottom: 3px solid #F6F6F6; padding:2rem 0}
-.information i::before {display:flex; align-content: center; margin-right: .5rem}
+.sns ul {display:flex; justify-content: center}
+.sns .fa-stack {font-size: .8rem}
+.information ul:last-child i::before {display:flex; align-content: center; margin-right: .5rem}
 .information span {font-family: 'Arimo', sans-serif;}
+
+
+.education h4 {font-family: "Nanum Square B"; font-size: 17px}
 .education ul, .academy ul {margin-bottom: 2rem}
 .academy .date {display:flex; justify-content: space-between}
 .academy .date i::before {margin-right: .2rem}
 
 
 .main {flex:1 1 auto; padding:3rem }
+.work h4 {font-family: 'Open Sans', sans-serif; font-size: 18px}
 .work div {display:flex; justify-content: space-between; margin-bottom: 2rem;}
 .work .links {flex:0 0 20%; display:flex; align-content: center; justify-content: flex-end; flex-wrap:wrap}
 .work .links a {color:black;}
@@ -51,7 +64,7 @@ aside {flex:0 0 20%; padding:3rem; border-right: 1px solid #DDD }
 .work .links .behance .fa-square {color: cornflowerblue}
 .work .links .link .fa-square {color: royalblue}
 
-.skills div {display:flex}
+.skills div {display:flex; font-family: 'Open Sans', sans-serif;}
 .skills ul {flex:1 1 auto}
 
 @media screen and (max-width: 490px) {
@@ -59,6 +72,8 @@ aside {flex:0 0 20%; padding:3rem; border-right: 1px solid #DDD }
     .resume {flex-direction: column;}
     aside {padding:1.5rem}
     .main {padding:1.5rem}
+    .education ul {display:flex; justify-content: space-between; margin-bottom:.5rem}
+    .education h4 {font-size:16px}
     .work div {flex-direction: column; justify-content: left; border-bottom:1px solid #eee}
     .work div ul:first-child {margin-bottom: .5rem}
     .work .links {margin-bottom:1rem}
