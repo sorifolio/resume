@@ -17,17 +17,15 @@ local('cfnmkB'),
 url(./fonts/cfnmkB.ttf) format('truetype'),
 url(./fonts/cfnmkB.otf) format('opentype'); }
 
-body {font:15px/1.5 "Nanum Square"; -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale; text-rendering: optimizeLegibility; }
+body {font:15px/1.5 "Nanum Square"; -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale; text-rendering: optimizeLegibility; margin:0; padding:0 }
 ul {list-style: none; margin:0; padding:0;}
 li {margin-bottom:.5rem}
 a {color:black; text-decoration: none;}
-#root {opacity:0; animation:2s appear forwards; width:100%; min-height:100vh; padding:4rem; display:flex; box-sizing: border-box; justify-content: center;  background-image:url("./images/bg_plant.jpg"); background-size: cover; background-repeat: no-repeat}
 
-@keyframes appear {
-    0% {opacity:0; visibility: hidden}
-    100% {opacity: 1; visibility: visible}
-}
-.resume {opacity:0; animation:1s appear forwards .2s; background-color: white; max-width: 1600px; width: 1200px; display:flex  }
+
+.wrapper {opacity:0; animation:2s appear forwards; width:100%; min-height:100vh; padding:4rem; display:flex; box-sizing: border-box; justify-content: center;  background-image:url("./images/bg_plant.jpg"); background-size: cover; background-repeat: no-repeat}
+.icon {position: absolute; right:2rem; top:2rem; cursor: pointer; color: white}
+.resume {opacity:0; animation:1s appearFadeTop forwards .2s; background-color: white; max-width: 1600px; width: 1200px; display:flex  }
 
 h1, h2, h3, h4, h5 {margin:0; font-family: "Open Sans", sans-serif, 'Nanum Square B' }
 h3 {font-family: 'Lobster', cursive; font-size:2rem; font-weight: normal; text-transform: capitalize; margin-bottom:1rem; }
@@ -46,7 +44,7 @@ aside {flex:0 0 20%; padding:3rem; border-right: 1px solid #DDD }
 .sns ul {display:flex; justify-content: center}
 .sns .fa-stack {font-size: .8rem}
 .information ul:last-child i::before {display:flex; align-content: center; margin-right: .5rem}
-.information span {font-family: 'Arimo', sans-serif;}
+.information span {font-family: 'Arimo', sans-serif; font-size:16px}
 
 
 .education h4 {font-family: "Nanum Square B"; font-size: 17px}
@@ -68,8 +66,19 @@ aside {flex:0 0 20%; padding:3rem; border-right: 1px solid #DDD }
 .skills div {display:flex; font-family: 'Open Sans', sans-serif;}
 .skills ul {flex:1 1 auto}
 
+@keyframes appear {
+    0% {opacity:0; visibility: hidden}
+    100% {opacity: 1; visibility: visible}
+}
+
+@keyframes appearFadeTop {
+    0% {opacity:0; visibility: hidden; transform: translateY(30px)}
+    100% {opacity: 1; visibility: visible; transform: translateY(0px)}
+}
+
 @media screen and (max-width: 490px) {
-    #root {padding:1rem}
+    .wrapper {padding:1rem}
+    .icon {display: none}
     .resume {flex-direction: column;}
     aside {padding:1.5rem}
     .main {padding:1.5rem}
@@ -83,13 +92,13 @@ aside {flex:0 0 20%; padding:3rem; border-right: 1px solid #DDD }
 
 @media print {
     body {font-size: 14px}
-    #root {min-width:1400px; padding:0}
+    .wrapper {min-width:1400px; padding:0}
     .resume {width:auto; max-width: none;}
     .title .picture img {visibility: visible}
-    .sns, .work .links {display:none}
+    .sns, .icon, .work .links {display:none}
+    @page {
+        size: auto;   /* auto is the initial value */
+        margin: 2rem;
+    }
 }
 
-@page {
-    size: auto;   /* auto is the initial value */
-    margin: 2rem;
-}

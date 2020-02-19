@@ -364,9 +364,15 @@ const Aside = (props) => {
 
 const App = () => {
     return (
-        <div className="resume">
-            <Aside initialSNS={sns} initialAcademies={academies}/>
-            <Main initialWorks={works}/>
+        <div className="wrapper">
+            <ul className="icon">
+                <li><ion-icon className="ico-print" name="print-outline" size="large" onClick={() => window.print()}></ion-icon></li>
+            </ul>
+            <div className="resume">
+                <Aside initialSNS={sns} initialAcademies={academies}/>
+                <Main initialWorks={works}/>
+            </div>
+
         </div>
     );
 };
