@@ -70,61 +70,69 @@ const academies = [
 ];
 
 const works = [
-    {
-      id: "ajou-covid-19",
-      title: "Web UI/UX Design & Markup",
-      date: "2020.10 ~ 2021.11",
-      content: "코로나 환자 현황 및 정보조회 대시보드 UI/UX 디자인 및 마크업개발",
-      behance: "https://www.behance.net/gallery/121760365/Covid-19-Dashboard",
-      link: "http://coralcat.github.io/portfolio/corona-board",
-    },
-    {
-      id: "ajou-budon",
-      title: "Responsive UI/UX Design & Markup",
-      date: "2020.07 ~ 2021.10",
-      content: "아주대학교 교수님 사업체 BUD.on UI/UX 디자인 및 마크업개발",
-      behance: "https://www.behance.net/gallery/109560787/BUDon",
-      link: "https://coralcat.github.io/portfolio/budon_v2/",
-    },
-    {
-      id: "ajou-mel",
-      title: "Responsive UI/UX Design & Markup",
-      date: "2020.06 ~ 2021.07",
-      content: "BUD.on 회사 사이트 UI/UX 디자인 및 마크업개발",
-      behance: "https://www.behance.net/gallery/109210431/MEL",
-      link: "https://coralcat.github.io/portfolio/mel/",
-    },
-    {
-      id: "ajou-dqts",
-      title: "Web UI/UX Design & Markup",
-      date: "2020.06 ~ 2021.10",
-      content: "아주대학교 의료정보학과 DQTS UI/UX 디자인 및 마크업개발",
-      behance: "https://www.behance.net/gallery/109412503/DQTS",
-      link: "https://coralcat.github.io/portfolio/dqts/",
-    },
-    {
-      id: "ajou-vass",
-      title: "Web UI/UX Design & Markup",
-      date: "2020.04 ~ 2021.11",
-      content: "아주대학교 백신접종현황 및 능동감시조회 VASS UI/UX 디자인 및 마크업개발",
-      behance: "https://www.behance.net/gallery/109413629/VASS",
-      link: "https://coralcat.github.io/portfolio/vass/",
-    },
-    {
-      id: "ajou-apex",
-      title: "Responsive UI/UX Design & Markup",
-      date: "2020.03 ~ 2020.11",
-      content: "아주대학교 응급의학과 APEX UI/UX 디자인 및 마크업개발",
-      behance: "https://www.behance.net/gallery/108927995/APEX",
-      link: "https://coralcat.github.io/portfolio/apex/",
-    },
+  {
+    id: "gabiacns-diad",
+    title: "Web UI/UX Design & Markup",
+    date: "2022.01 ~ 2022.09",
+    content: "광고 키워드 트렌드 조회 및 관리용 대시보드 UI/UX 디자인 및 마크업개발",
+    behance: "https://www.behance.net/gallery/152626409/Diad-Trend",
+    link: "http://sorrrri.github.io/diad_trend",
+  },
+  {
+    id: "ajou-covid-19",
+    title: "Web UI/UX Design & Markup",
+    date: "2020.10 ~ 2021.11",
+    content: "코로나 환자 현황 및 정보조회 대시보드 UI/UX 디자인 및 마크업개발",
+    behance: "https://www.behance.net/gallery/121760365/Covid-19-Dashboard",
+    link: "http://sorrrri.github.io/portfolio/corona-board",
+  },
+  {
+    id: "ajou-budon",
+    title: "Responsive UI/UX Design & Markup",
+    date: "2020.07 ~ 2021.10",
+    content: "아주대학교 교수님 사업체 BUD.on UI/UX 디자인 및 마크업개발",
+    behance: "https://www.behance.net/gallery/109560787/BUDon",
+    link: "https://sorrrri.github.io/portfolio/budon_v2/",
+  },
+  {
+    id: "ajou-mel",
+    title: "Responsive UI/UX Design & Markup",
+    date: "2020.06 ~ 2021.07",
+    content: "BUD.on 회사 사이트 UI/UX 디자인 및 마크업개발",
+    behance: "https://www.behance.net/gallery/109210431/MEL",
+    link: "https://sorrrri.github.io/portfolio/mel/",
+  },
+  {
+    id: "ajou-dqts",
+    title: "Web UI/UX Design & Markup",
+    date: "2020.06 ~ 2021.10",
+    content: "아주대학교 의료정보학과 DQTS UI/UX 디자인 및 마크업개발",
+    behance: "https://www.behance.net/gallery/109412503/DQTS",
+    link: "https://sorrrri.github.io/portfolio/dqts/",
+  },
+  {
+    id: "ajou-vass",
+    title: "Web UI/UX Design & Markup",
+    date: "2020.04 ~ 2021.11",
+    content: "아주대학교 백신접종현황 및 능동감시조회 VASS UI/UX 디자인 및 마크업개발",
+    behance: "https://www.behance.net/gallery/109413629/VASS",
+    link: "https://sorrrri.github.io/portfolio/vass/",
+  },
+  {
+    id: "ajou-apex",
+    title: "Responsive UI/UX Design & Markup",
+    date: "2020.03 ~ 2020.11",
+    content: "아주대학교 응급의학과 APEX UI/UX 디자인 및 마크업개발",
+    behance: "https://www.behance.net/gallery/108927995/APEX",
+    link: "https://sorrrri.github.io/portfolio/apex/",
+  },
   {
     id: "welstory",
     title: "Mobile UI/UX Design & Markup",
     date: "2019.08 ~ 2019.12",
     content: "삼성 웰스토리 모바일 오피스 UI/UX 디자인 및 마크업개발",
     behance: "https://www.behance.net/gallery/92129937/SAMSUNG-Welstory",
-    link: "https://coralcat.github.io/welstory/",
+    link: "https://sorrrri.github.io/welstory/",
   },
   {
     id: "rsm-chatbot",
@@ -132,7 +140,7 @@ const works = [
     date: "2019.02 ~ 2019.07",
     content: "르노삼성 자동차 고객센터 챗봇 UI/UX 디자인 및 마크업개발",
     behance: "https://www.behance.net/gallery/92085323/Renault-Samsung",
-    link: "https://coralcat.github.io/rsm_chatbot/",
+    link: "https://sorrrri.github.io/rsm_chatbot/",
   },
   {
     id: "skhynix",
@@ -140,7 +148,7 @@ const works = [
     date: "2018.12 ~ 2019.01",
     content: "SK 하이닉스 사내 시스템 GDPR UI/UX 디자인 및 마크업개발",
     behance: "https://www.behance.net/gallery/92070663/SK-Hynix",
-    link: "https://coralcat.github.io/sk_gdpr/",
+    link: "https://sorrrri.github.io/sk_gdpr/",
   },
   {
     id: "skcnc",
@@ -164,7 +172,7 @@ const works = [
     date: "2017.12 ~ 2018.03",
     content: "GHSoft ISO 인증관리 솔루션 마크업개발, 제품 프로모션 사이트 제작",
     behance: "https://www.behance.net/gallery/91578205/GHSoft",
-    link: "https://coralcat.github.io/imez/",
+    link: "https://sorrrri.github.io/imez/",
   },
   {
     id: "tovsoft",
@@ -367,8 +375,8 @@ const Information = () => (
 
 const Profile = () => (
   <section className="profile kr">
-    브라우저 안의 불필요한 시각공해를 줄이고, 코드 구조를 아름답게 짜는것에 흥미를 느끼며, 최종적으로 UI/UX 개발자가 되는
-    것이 목표입니다.
+    브라우저 안의 불필요한 시각공해를 줄이고, 코드 구조를 아름답게 짜는것에 흥미를 느끼며, 최종적으로 UI/UX 개발자가
+    되는 것이 목표입니다.
   </section>
 );
 
