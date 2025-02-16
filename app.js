@@ -13,6 +13,12 @@ const sns = [
 
 const academies = [
   {
+    id: "Typescript",
+    title: "Typescript",
+    date: "2025.01 ~ 2024.02",
+    hours: "10시간",
+  },
+  {
     id: "Vuejs",
     title: "Vue.js",
     date: "2024.02 ~ 2024.06",
