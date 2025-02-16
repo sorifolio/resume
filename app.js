@@ -1,9 +1,9 @@
 /** @format */
 
 const sns = [
-  { id: "behance", link: "https://www.behance.net/coralcat", icon: "fab fa-behance fa-stack-1x fa-inverse" },
-  { id: "github", link: "https://www.behance.net/coralcat", icon: "fab fa-github-alt fa-stack-1x fa-inverse" },
-  { id: "pinterest", link: "https://www.pinterest/soridive", icon: "fab fa-pinterest-p fa-stack-1x fa-inverse" },
+  { id: "behance", link: "https://www.behance.net/sorrrri", icon: "fab fa-behance fa-stack-1x fa-inverse" },
+  { id: "github", link: "https://www.behance.net/sorrrri", icon: "fab fa-github-alt fa-stack-1x fa-inverse" },
+  { id: "pinterest", link: "https://www.pinterest/rgbsound", icon: "fab fa-pinterest-p fa-stack-1x fa-inverse" },
   {
     id: "youtube",
     link: "https://www.youtube.com/channel/UC6hdJ39DekitIQ8sIf5RtQg",
@@ -13,6 +13,12 @@ const sns = [
 ];
 
 const academies = [
+  {
+    id: "Vuejs",
+    title: "Vue.js",
+    date: "2024.02 ~ 2024.06",
+    hours: "30시간",
+  },
   {
     id: "Reactjs",
     title: "ReactJS Programming",
@@ -71,9 +77,17 @@ const academies = [
 
 const works = [
   {
+    id: "gabiacns-moa",
+    title: "Front-end & Markup",
+    date: "2022.01 ~ 2025.03",
+    content: "전문가 매칭 플랫폼 웹서비스 프론트엔드",
+    behance: "",
+    link: "http://moa.gabiacns.com",
+  },
+  {
     id: "gabiacns-diad",
-    title: "Web UI/UX Design & Markup",
-    date: "2022.01 ~ 2022.09",
+    title: "Front-end, Web UI/UX Design & Markup",
+    date: "2022.01 ~ 2025.03",
     content: "광고 키워드 트렌드 조회 및 관리용 대시보드 UI/UX 디자인 및 마크업개발",
     behance: "https://www.behance.net/gallery/152626409/Diad-Trend",
     link: "http://sorrrri.github.io/diad_trend",
@@ -186,10 +200,7 @@ const works = [
     id: "top-intercube",
     title: "Web Design & Markup",
     date: "2016.01 ~ 2017.01",
-    content:
-      "- 탑인터큐브 온라인몰 리뉴얼\n" +
-      "- 사이트 내 모든 배너, 이벤트페이지, 메일링 이미지 제작 및 업로드\n" +
-      "- 썸내일, 상세페이지 이미지 제작 및 업로드",
+    content: "- 탑인터큐브 온라인몰 리뉴얼\n" + "- 사이트 내 모든 배너, 이벤트페이지, 메일링 이미지 제작 및 업로드\n" + "- 썸내일, 상세페이지 이미지 제작 및 업로드",
     behance: "https://www.behance.net/gallery/91577293/TNP-Mall",
     link: "",
   },
@@ -197,9 +208,7 @@ const works = [
     id: "chungsa",
     title: "UI/UX Design & Web Markup",
     date: "2015.01 ~ 2015.12",
-    content:
-      "- 정부청사관리소 공식사이트 관리, 메인페이지 디자인 및 마크업개발\n" +
-      "- 사내 업무 시스템 메인페이지 디자인 및 마크업개발",
+    content: "- 정부청사관리소 공식사이트 관리, 메인페이지 디자인 및 마크업개발\n" + "- 사내 업무 시스템 메인페이지 디자인 및 마크업개발",
     behance: "https://www.behance.net/gallery/91576791/_",
     link: "http://chungsa.go.kr",
   },
@@ -247,10 +256,7 @@ const works = [
     id: "nhn",
     title: "Content Management",
     date: "2009.11 ~ 2010.11",
-    content:
-      "- 네이버 백신 업데이트, 테스트 및 CS관리\n" +
-      "- 네이버 책 검수, 네이버 키친,웹툰, 영화, 등의 포토샵작업\n" +
-      "- 네이버 모바일 과련 배너제작 등등",
+    content: "- 네이버 백신 업데이트, 테스트 및 CS관리\n" + "- 네이버 책 검수, 네이버 키친,웹툰, 영화, 등의 포토샵작업\n" + "- 네이버 모바일 과련 배너제작 등등",
     behance: "",
     link: "",
   },
@@ -320,14 +326,7 @@ const Main = (props) => {
       <section className="work">
         <h3>work experience</h3>
         {props.initialWorks.map((item) => (
-          <Work
-            title={item.title}
-            date={item.date}
-            content={item.content}
-            behance={item.behance}
-            link={item.link}
-            key={item.id}
-          />
+          <Work title={item.title} date={item.date} content={item.content} behance={item.behance} link={item.link} key={item.id} />
         ))}
       </section>
       <Skills />
@@ -374,10 +373,7 @@ const Information = () => (
 );
 
 const Profile = () => (
-  <section className="profile kr">
-    브라우저 안의 불필요한 시각공해를 줄이고, 코드 구조를 아름답게 짜는것에 흥미를 느끼며, 최종적으로 UI/UX 개발자가
-    되는 것이 목표입니다.
-  </section>
+  <section className="profile kr">브라우저 안의 불필요한 시각공해를 줄이고, 코드 구조를 아름답게 짜는것에 흥미를 느끼며, 최종적으로 UI/UX 개발자가 되는 것이 목표입니다.</section>
 );
 
 const Education = () => (
