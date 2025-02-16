@@ -78,7 +78,7 @@ const works = [
   {
     id: "gabiacns-moa",
     title: "Front-end & Markup",
-    date: "2022.01 ~ 2025.03",
+    date: "2024.03 ~ 2025.03",
     content: "전문가 매칭 플랫폼 웹서비스 프론트엔드",
     behance: "",
     link: "http://moa.gabiacns.com",
