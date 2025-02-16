@@ -9,7 +9,6 @@ const sns = [
     link: "https://www.youtube.com/channel/UC6hdJ39DekitIQ8sIf5RtQg",
     icon: "fab fa-youtube fa-stack-1x fa-inverse",
   },
-  { id: "dribbble", link: "https://www.dribbble/coralcat", icon: "fab fa-dribbble fa-stack-1x fa-inverse" },
 ];
 
 const academies = [
@@ -372,9 +371,7 @@ const Information = () => (
   </section>
 );
 
-const Profile = () => (
-  <section className="profile kr">브라우저 안의 불필요한 시각공해를 줄이고, 코드 구조를 아름답게 짜는것에 흥미를 느끼며, 최종적으로 UI/UX 개발자가 되는 것이 목표입니다.</section>
-);
+const Profile = () => <section className="profile kr">웹디자이너로 시작하여 퍼블리셔를 거쳐 프론트엔드로 활동하고 있는 개발자입니다.</section>;
 
 const Education = () => (
   <section className="education">
