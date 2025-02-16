@@ -2,8 +2,8 @@
 
 const sns = [
   { id: "behance", link: "https://www.behance.net/sorrrri", icon: "fab fa-behance fa-stack-1x fa-inverse" },
-  { id: "github", link: "https://www.behance.net/sorrrri", icon: "fab fa-github-alt fa-stack-1x fa-inverse" },
-  { id: "pinterest", link: "https://www.pinterest/rgbsound", icon: "fab fa-pinterest-p fa-stack-1x fa-inverse" },
+  { id: "github", link: "https://www.github.com/sorrrri", icon: "fab fa-github-alt fa-stack-1x fa-inverse" },
+  { id: "pinterest", link: "https://www.pinterest.com/rgbsound", icon: "fab fa-pinterest-p fa-stack-1x fa-inverse" },
   {
     id: "youtube",
     link: "https://www.youtube.com/channel/UC6hdJ39DekitIQ8sIf5RtQg",
